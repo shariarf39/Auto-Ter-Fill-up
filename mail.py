@@ -10,14 +10,14 @@ def run(playwright: Playwright) -> None:
     page.get_by_role("link", name="NUB Student Portal - Login").click()
     page.get_by_placeholder("Student ID").click()
     #studemtn id
-    page.get_by_placeholder("Student ID").fill("07220303")
+    page.get_by_placeholder("Student ID").fill("demo-07220303")
     page.get_by_placeholder("Password").click()
     #password
-    page.get_by_placeholder("Password").fill("1234")
+    page.get_by_placeholder("Password").fill("demo-1234")
     page.get_by_placeholder("Password").press("Enter")
     page.get_by_role("link", name="TER Fill Up").click()
     # course code
-    page.get_by_label("Select Course And Section *").select_option("24800331")
+    page.get_by_label("Select Course And Section *").select_option("demo-24800331")
     page.locator("select[name=\"answerValueId\\[0\\]\"]").select_option("1269663")
     page.locator("select[name=\"answerValueId\\[1\\]\"]").select_option("1269663")
     page.locator("select[name=\"answerValueId\\[2\\]\"]").select_option("1269663")
